@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/green.css" id="J_link">
+</head>
+<body>
+    <button onclick="changeColor('black')">高端黑</button>
+    <button onclick="changeColor('red')">夕阳红</button>
+    <button onclick="changeColor('green')">芳草绿</button>
+    <button onclick="changeColor('gray')">奶奶灰</button>
+
+    <script>
+        function changeColor(color){
+            document.getElementById('J_link').href = './css/' + color + '.css'
+        }
+    </script>
+</body>
+</html>

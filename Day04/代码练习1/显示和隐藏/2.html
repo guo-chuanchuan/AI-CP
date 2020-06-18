@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">显示/隐藏</button>
+    <div class="box" id="box"></div>
+    <script>
+        var OBtn = document.getElementById('btn')
+        var Obox = document.getElementById('box')
+        OBtn.onclick = function(){
+            if(Obox.style.display == 'none'){
+                Obox.style.display = 'block'
+            }else{
+                Obox.style.display = 'none'
+        }
+        }
+        
+    </script>
+</body>
+</html>

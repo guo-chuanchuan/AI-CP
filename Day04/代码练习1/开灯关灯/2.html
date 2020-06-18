@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .night{
+            background-color: black;
+
+        }
+        .day{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">开关灯</button>
+    <script>
+        var oBody = document.body
+        var oBtn = document.getElementById('btn')
+
+        oBtn.onclick = function(){
+            if(oBody.className == 'night'){
+                oBody.className = 'day'
+            }else{
+                oBody.className = 'night'
+            }
+        }
+    </script>
+</body>
+</html>
