@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="" id="numone" placeholder="第一个数">
+        +
+        <input type="text" name="" id="numtwo" placeholder="第二个数">
+        =
+        <input type="text" name="" id="numsum" disabled>
+
+        <button type="button" id="btn">计算</button>
+    </form>
+
+    <script>
+
+        oNumone = document.getElementById('numone');
+        oNumtwo = document.getElementById('numtwo');
+        oNumsum = document.getElementById('numsum');
+        oBtn = document.getElementById('btn');
+
+        oBtn.onclick = function(){
+
+            var numsum = 0;
+
+            vNumone = oNumone.value;
+            vNumtwo = oNumtwo.value;
+
+            if(isNaN(vNumone)){
+                alert("第一个数字输入有误！");
+                return;
+            }
+            if(isNaN(vNumtwo)){
+                alert("第二个数字输入有误！");
+                return;
+            }
+            if(vNumone == ''){
+                alert("请输入第一个数字!");
+                return;
+            }
+            if(vNumtwo == ''){
+                alert("请输入第二个数字!");
+                return;
+            }
+
+
+            numone = parseFloat(vNumone);
+            numtwo = parseFloat(vNumtwo);
+
+            numsum = numone + numtwo;
+
+            oNumsum.value = numsum;
+
+
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>
