@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <button id="btn">Button</button>
+    
+    <script>
+        
+        (function(){
+            console.log('chuanchuan');
+        })();
+
+        (function(str){
+            console.log(str)
+        })('chuanchuan');
+
+        //事件
+        var oBtn = document.getElementById('btn');
+        oBtn.onclick = function(){
+            console.log("点击按钮会执行到这里！");
+        }
+
+        //对象
+        var person1 = {
+            name:"chuan",
+            age:18,
+            say:function(){
+                return "My name is " + this.name + " and my age is " + this.age;
+            }
+        }
+
+        console.log(person1.say());
+
+        //函数
+        var fn = function(){
+            console.log("hello,everyone! my name is chuan!");
+        }
+        //调用方式和普通函数一样
+        fn();
+
+        //回调函数
+        setInterval(     function(){console.log("I am chinese! I love china!");}   ,   1000);
+
+        //返回值
+        function fn2(){
+            return function(){
+                console.log('隐函数还能这样');
+            }
+        }
+
+        fn2()();
+    </script>
+</body>
+</html>

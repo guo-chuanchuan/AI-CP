@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function sum(){
+            var len = arguments.length;
+            var sum = 0;
+            for(var i = 0; i < len; i++){
+                sum += arguments[i];
+                
+            }
+            return sum;
+        }
+
+        console.log(sum(1,2));
+        console.log(sum(1,2,8));
+        console.log(sum(1,2,8,8));
+        console.log(sum(1,2,8,8,8));
+
+    </script>
+</body>
+</html>

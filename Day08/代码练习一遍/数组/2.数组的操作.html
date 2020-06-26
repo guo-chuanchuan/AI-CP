@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        //数组的操作
+
+        var aFruit = ['apple','orange','banana','pear'];
+
+        console.log(aFruit);
+
+        aFruit.push("pineapple");//在原来的数组末尾添加一个元素
+        console.log(aFruit);
+
+        aFruit.unshift("watermelon");//在原来数组首部添加一个元素
+        console.log(aFruit);
+
+        aFruit.pop();//删除数组末尾元素
+        console.log(aFruit);
+
+        aFruit.shift();//删除数组首部元素
+        console.log(aFruit);
+
+        var aFruit = ['apple','orange','banana','pear'];
+        console.log(aFruit);
+
+        aFruit.splice(1,0,'orange2','watermelon');
+        console.log(aFruit);
+
+        aFruit.splice(1,2);
+        console.log(aFruit);
+
+        aFruit.splice(0,2,'chuan1','chuan2');
+        console.log(aFruit);
+    </script>
+    
+</body>
+</html>
